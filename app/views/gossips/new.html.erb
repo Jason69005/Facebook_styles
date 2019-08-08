@@ -1,0 +1,22 @@
+<h1> Création d'un nouveau gossip</h1>
+
+<div class="container">
+	<form action= <%= gossips_path %> method="POST">
+		<div class="form-group">
+			<input type="hidden" name="authenticity_token" value= <%= form_authenticity_token %> >
+		</div>
+
+		<div class="form-group">
+			<label> Le titre de ton gossip: </label><br />
+			<input type="text" name="gossip_title"> <br />
+		</div>
+
+		<div class="form-group">
+			<label> Votre gossip: </label><br />
+			<input type="text" name="gossip_content"> <br />
+		</div>
+		<br />
+			<input type="submit" value="Valider">
+		
+	</form> 
+</div>
